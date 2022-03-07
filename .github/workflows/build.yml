@@ -1,1 +1,19 @@
+name: MMO
 
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/Auxilor.yml'
+      
+jobs:
+  MMOItems:
+    uses: HenryDuck/ServerProjects/.github/workflows/maven-build.yml@main
+    with:
+        repository: "HenryDuck/ServerProjects/resources/MMOItems"
+        name: "MMOItems"
+  MMOCore:
+    uses: HenryDuck/ServerProjects/.github/workflows/maven-build.yml@main
+    with:
+        repository: "HenryDuck/ServerProjects/resources/MMOCore"
+        name: "MMOCore"
