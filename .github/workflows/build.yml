@@ -10,10 +10,12 @@ jobs:
   MMOItems:
     uses: HenryDuck/ServerProjects/.github/workflows/maven-build.yml@main
     with:
-        repository: "HenryDuck/ServerProjects/resources/MMOItems"
+        repository: "HenryDuck/ServerProjects"
+        target: "resources/MMOItems/*"
         name: "MMOItems"
   MMOCore:
     uses: HenryDuck/ServerProjects/.github/workflows/maven-build.yml@main
     with:
-        repository: "HenryDuck/ServerProjects/resources/MMOCore"
+        repository: "HenryDuck/ServerProjects"
+        target: "resources/MMOCore/*"
         name: "MMOCore"
